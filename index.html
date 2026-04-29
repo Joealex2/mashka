@@ -1,12 +1,11 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>MASHKA BOX Training Club</title>
-
 <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
 
@@ -18,7 +17,6 @@
 <a href="#ubicacion" class="menu">Ubicación</a>
 <a href="#contacto" class="menu">Contacto</a>
 </nav>
-
 
 <section class="dos-columnas">
 
@@ -54,17 +52,12 @@ Contamos con entrenadores capacitados, equipos de calidad y un ambiente motivado
 
 </section>
 
-
 <section class="dos-columnas">
 
 <div>
 <img src="img/centrogym.jpeg" class="img-servicio">
-<br>
-
-<button class="boton">
-REGÍSTRATE AHORA
-</button>
-
+<br><br>
+<button class="boton">REGÍSTRATE AHORA</button>
 </div>
 
 <div>
@@ -83,7 +76,6 @@ BENEFICIOS
 </div>
 
 </section>
-
 
 <section>
 
@@ -145,8 +137,6 @@ PLANES DE ENTRENAMIENTO
 
 </section>
 
-
-
 <section class="dos-columnas">
 
 <div>
@@ -156,7 +146,7 @@ PLANES DE ENTRENAMIENTO
 <div>
 
 <h2 class="titulo-seccion" id="horarios">
-HORARIOS
+HORARIOS DE ATENCIÓN
 </h2>
 
 <table class="tabla-horario">
@@ -186,13 +176,16 @@ HORARIOS
 <td>7:00 PM</td>
 </tr>
 
+<tr>
+<td>-</td>
+<td>8:00 PM</td>
+</tr>
+
 </table>
 
 </div>
 
 </section>
-
-
 
 <section class="dos-columnas">
 
@@ -202,7 +195,10 @@ HORARIOS
 Ubicación
 </h2>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.275335287101!2d-78.61389142384922!3d-0.9452788353509551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d461636565889b%3A0x390a2c8fd01dcfa2!2sMashka%20Box%20Training%20Club!5e0!3m2!1ses-419!2sec!4v1777426934700!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe class="mapa"
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.275335287101!2d-78.61389142384922!3d-0.9452788353509551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d461636565889b%3A0x390a2c8fd01dcfa2!2sMashka%20Box%20Training%20Club!5e0!3m2!1ses-419!2sec!4v1777426934700!5m2!1ses-419!2sec"
+allowfullscreen loading="lazy">
+</iframe>
 
 <p class="direccion">
 Av. Unidad Nacional y Manuelita Saenz
@@ -220,13 +216,9 @@ Av. Unidad Nacional y Manuelita Saenz
 
 </section>
 
-
-
 <section id="contacto">
 
-<h2 class="titulo-seccion">
-Contacto
-</h2>
+<h2 class="titulo-seccion">Contacto</h2>
 
 <p class="sub-contacto">
 Déjanos tus datos y te responderemos pronto
@@ -253,42 +245,19 @@ Sin costo de inscripción
 
 </div>
 
-
 <div>
 
-<!-- CONECTADO A MYSQL -->
 <form action="registrar.php" method="POST">
 
-<input
-type="text"
-name="nombre"
-placeholder="Escribe tu nombre"
-class="caja-texto"
-required>
+<input type="text" name="nombre" placeholder="Escribe tu nombre" class="caja-texto" required>
 
-<input
-type="email"
-name="correo"
-placeholder="Escribe tu e-mail"
-class="caja-texto"
-required>
+<input type="email" name="correo" placeholder="Escribe tu e-mail" class="caja-texto" required>
 
-<input
-type="text"
-name="telefono"
-placeholder="Escribe tu teléfono"
-class="caja-texto">
+<input type="text" name="telefono" placeholder="Escribe tu teléfono" class="caja-texto">
 
-<textarea
-name="mensaje"
-class="caja-mensaje"
-placeholder="Escribe tu mensaje"
-required></textarea>
+<textarea name="mensaje" class="caja-mensaje" placeholder="Escribe tu mensaje" required></textarea>
 
-<input
-type="submit"s
-value="ENVIAR MENSAJE"
-class="boton">
+<input type="submit" value="ENVIAR MENSAJE" class="boton">
 
 </form>
 
@@ -298,13 +267,10 @@ class="boton">
 
 </section>
 
-
 <footer class="pie">
-
 <p>MASHKA BOX TRAINING CLUB</p>
 <p>Latacunga - Ecuador</p>
 <p>© 2026 Todos los derechos reservados</p>
-
 </footer>
 
 </body>

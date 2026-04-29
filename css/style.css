@@ -1,3 +1,5 @@
+/* style.css */
+
 body{
 background:black;
 color:white;
@@ -6,7 +8,9 @@ margin:0;
 padding:30px 5%;
 }
 
-section,nav,footer{
+section,
+nav,
+footer{
 max-width:1400px;
 margin:auto;
 }
@@ -40,6 +44,8 @@ flex-wrap:nowrap;
 flex:1;
 }
 
+/* TITULOS */
+
 .titulo-principal{
 font-size:70px;
 line-height:.8;
@@ -51,9 +57,62 @@ color:yellow;
 }
 
 .titulo-seccion{
-font-size:58px;
+font-size:clamp(40px,5vw,58px);
 color:yellow;
 }
+
+/* INICIO */
+
+.inicio-texto{
+position:relative;
+max-width:650px;
+}
+
+.subtitulo-club{
+position:absolute;
+top:40px;
+left:400px;
+color:deepskyblue;
+font-size:26px;
+margin:0;
+width:260px;
+line-height:1.1;
+}
+
+.frases-inicio{
+text-align:center;
+margin-top:25px;
+margin-bottom:45px;
+}
+
+.frase1,
+.frase2{
+font-size:24px;
+margin:0;
+line-height:1.1;
+}
+
+.frase1{
+color:yellow;
+}
+
+.frase2{
+color:white;
+}
+
+.texto{
+font-size:22px;
+line-height:1.5;
+}
+
+.texto-inicio{
+text-align:center;
+font-size:18px;
+line-height:1.3;
+max-width:520px;
+}
+
+/* IMAGENES */
 
 .img-principal,
 .img-servicio,
@@ -63,7 +122,6 @@ width:100%;
 max-width:380px;
 aspect-ratio:1/1;
 object-fit:cover;
-
 clip-path:polygon(
 25% 0%,
 75% 0%,
@@ -77,56 +135,24 @@ clip-path:polygon(
 }
 
 .img-principal{
-margin-left:auto;
 display:block;
+margin-left:auto;
 }
 
 .img-logo{
 width:250px;
 }
 
-.subtitulo-club{
-position:absolute;
-top:40px;
-left:400px;
-color:deepskyblue;
-font-size:26px;
-}
-
-.inicio-texto{
-position:relative;
-max-width:650px;
-}
-
-.frases-inicio{
-text-align:center;
-margin:30px 0;
-}
-
-.frase1{
-color:yellow;
-font-size:24px;
-}
-
-.frase2{
-font-size:24px;
-}
-
-.texto{
-font-size:22px;
-line-height:1.5;
-}
-
-.texto-inicio{
-text-align:center;
-font-size:18px;
-}
+/* BENEFICIOS */
 
 .lista-servicios{
 font-size:32px;
 line-height:2;
 list-style:none;
+padding:0;
 }
+
+/* BOTONES */
 
 .boton{
 background:yellow;
@@ -135,16 +161,27 @@ border:none;
 padding:15px 35px;
 border-radius:30px;
 font-weight:bold;
+cursor:pointer;
 }
+
+/* PLANES */
 
 .planes-contenedor{
 display:flex;
-gap:40px;
+justify-content:space-between;
 align-items:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.planes-tabla{
+flex:1;
+min-width:650px;
 }
 
 .tabla-planes{
 width:100%;
+max-width:700px;
 border-collapse:collapse;
 text-align:center;
 }
@@ -159,13 +196,27 @@ border:1px solid gray;
 padding:15px;
 }
 
+/* HORARIOS */
+
+/* HORARIOS */
+
+#horarios{
+font-size:52px;
+white-space:nowrap;
+margin-bottom:30px;
+}
+
 .tabla-horario{
 border-spacing:15px;
 }
 
 .tabla-horario th{
 background:#0057c2;
-padding:10px 35px;
+padding:14px 35px;
+font-size:20px;
+width:220px;
+height:48px;
+text-align:center;
 }
 
 .tabla-horario td{
@@ -173,11 +224,16 @@ border:2px solid yellow;
 padding:14px 35px;
 font-size:22px;
 text-align:center;
+width:220px;
+height:48px;
 }
+
+/* MAPA Y VIDEO */
 
 .mapa{
 width:550px;
 height:300px;
+border:0;
 }
 
 .video{
@@ -189,25 +245,53 @@ height:450px;
 font-size:24px;
 }
 
+/* CONTACTO */
+
 #contacto{
 text-align:center;
+margin-top:80px;
+}
+
+#contacto .titulo-seccion{
+font-size:58px;
+font-weight:normal;
+margin-bottom:20px;
 }
 
 .sub-contacto{
 font-size:22px;
 color:gray;
+margin:0 0 15px 0;
 }
 
 .sin-costo{
 color:yellow;
 font-size:22px;
 font-weight:bold;
-margin-bottom:60px;
+margin:0 0 60px 0;
 }
 
 #contacto .dos-columnas{
 align-items:flex-start;
 gap:80px;
+text-align:left;
+}
+
+#contacto .dos-columnas > div:first-child{
+margin-top:-120px;
+}
+
+#contacto .dos-columnas > div:first-child p{
+margin:8px 0;
+font-size:18px;
+}
+
+#contacto .dos-columnas > div:first-child p:nth-of-type(2),
+#contacto .dos-columnas > div:first-child p:nth-of-type(4),
+#contacto .dos-columnas > div:first-child p:nth-of-type(6){
+color:yellow;
+font-weight:bold;
+text-decoration:underline;
 }
 
 #contacto form{
@@ -230,6 +314,7 @@ height:150px;
 padding:15px;
 border:none;
 border-radius:10px;
+box-sizing:border-box;
 }
 
 #contacto .boton{
@@ -237,6 +322,8 @@ grid-column:2/3;
 justify-self:end;
 width:220px;
 }
+
+/* FOOTER */
 
 .pie{
 text-align:center;
